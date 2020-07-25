@@ -13,7 +13,7 @@ button {
 }
 
 button:hover{
-    background: #0053ba;
+    background:rgba(255, 224, 0, 0.2);
 }
 
 button:focus {

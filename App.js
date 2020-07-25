@@ -31,11 +31,12 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.h2`
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
 `;
 
 const Text = styled.p`
   padding-bottom: 1.5rem;
+  font-size: 1.3rem;
 `;
 
 const Button = styled.button`
@@ -46,17 +47,36 @@ const Button = styled.button`
   font-size: 1rem;
 `;
 
+const PresentedBy = styled.div`
+  position: absolute;
+  top: 1rem;
+  @media only screen and (min-width: 768px) {
+    left: 1rem;
+  }
+  height: 1.6rem;
+`;
+
 const Powered = styled.div`
   position: absolute;
   bottom: 1rem;
   @media only screen and (min-width: 768px) {
     right: 1rem;
   }
-  
+  height: 1.6rem;
+`;
+
+const InlineImage = styled.img`
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding-top: 14px;
 `;
 
 export default () => (
   <Container>
+    <PresentedBy>
+      An <a style={{color: "inherit"}} href="https://openesq.tech/" target="_">Open,Esq</a> Venture
+    </PresentedBy>
     <Content>
       <Title>PRIMAL ETH</Title>
       <Subtitle>A fundraising portal</Subtitle>
@@ -66,6 +86,14 @@ export default () => (
       </Text>
       <Button>Join our Mailing List</Button>
     </Content>
-    <Powered>Powered by OpenLaw on Ethereum</Powered>
+    <Powered>
+      Powered by{" "}
+      <a href="https://www.openlaw.io/" target="_">
+        <InlineImage src="https://www.openlaw.io/static/img/ol-logo-white.svg" />{" "}
+      </a>
+      on{" "}
+      <InlineImage src="https://ethereum.org/static/a183661dd70e0e5c70689a0ec95ef0ba/42584/ethereum-icon-purple.png" />{" "}
+      Ethereum
+    </Powered>
   </Container>
 );
