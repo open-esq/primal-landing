@@ -29400,7 +29400,7 @@ try {
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
   const Container = _c = _styledComponents.default.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://images.unsplash.com/photo-1542731538-f99c9f100885?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1097&q=80");
   background-size: cover;
   background-repeat: no-repeat;
@@ -29413,13 +29413,14 @@ try {
 `;
   const Content = _c2 = _styledComponents.default.div`
   padding: 1rem;
-  max-width: 450px;
-  @media only screen and (min-width: 768px) {
+  max-width: 500px;
+  @media only screen and (min-width: 1048px) {
     margin-left: 40rem;
   }
 `;
   const Title = _c3 = _styledComponents.default.h1`
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: 600;
   letter-spacing: 10px;
   text-shadow: rgba(255, 224, 0, 0.7) 0 0 18px;
   padding-bottom: 1rem;
@@ -29450,49 +29451,49 @@ try {
     __self: void 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 59,
       columnNumber: 3
     }
   }, /*#__PURE__*/_react.default.createElement(Content, {
     __self: void 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 60,
       columnNumber: 5
     }
   }, /*#__PURE__*/_react.default.createElement(Title, {
     __self: void 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 61,
       columnNumber: 7
     }
   }, "PRIMAL ETH"), /*#__PURE__*/_react.default.createElement(Subtitle, {
     __self: void 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 62,
       columnNumber: 7
     }
   }, "A fundraising portal"), /*#__PURE__*/_react.default.createElement(Text, {
     __self: void 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 63,
       columnNumber: 7
     }
   }, "We are applying to become a Reg C.F. funding portal that's exclusive to the Ethereum blockchain"), /*#__PURE__*/_react.default.createElement(Button, {
     __self: void 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 67,
       columnNumber: 7
     }
   }, "Join our Mailing List")), /*#__PURE__*/_react.default.createElement(Powered, {
     __self: void 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 69,
       columnNumber: 5
     }
   }, "Powered by OpenLaw on Ethereum"));

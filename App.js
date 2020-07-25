@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://images.unsplash.com/photo-1542731538-f99c9f100885?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1097&q=80");
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,14 +16,15 @@ const Container = styled.div`
 
 const Content = styled.div`
   padding: 1rem;
-  max-width: 450px;
-  @media only screen and (min-width: 768px) {
+  max-width: 500px;
+  @media only screen and (min-width: 1048px) {
     margin-left: 40rem;
   }
 `;
 
 const Title = styled.h1`
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: 600;
   letter-spacing: 10px;
   text-shadow: rgba(255, 224, 0, 0.7) 0 0 18px;
   padding-bottom: 1rem;
