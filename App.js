@@ -62,7 +62,7 @@ const Powered = styled.div`
   @media only screen and (min-width: 768px) {
     right: 1rem;
   }
-  height: 1.6rem;
+  height: 2rem;
 `;
 
 const InlineImage = styled.img`
@@ -75,7 +75,11 @@ const InlineImage = styled.img`
 export default () => (
   <Container>
     <PresentedBy>
-      An <a style={{color: "inherit"}} href="https://openesq.tech/" target="_">Open,Esq</a> Venture
+      An{" "}
+      <a style={{ color: "inherit" }} href="https://openesq.tech/" target="_">
+        Open,Esq
+      </a>{" "}
+      Venture
     </PresentedBy>
     <Content>
       <Title>PRIMAL ETH</Title>
@@ -84,13 +88,21 @@ export default () => (
         We are applying to become a Reg C.F. funding portal that's exclusive to
         the Ethereum blockchain
       </Text>
-      <Button>Join our Mailing List</Button>
+      <a
+        class="typeform-share button"
+        href="https://form.typeform.com/to/mZKXwSV9"
+        data-mode="drawer_left"
+        target="_blank"
+      >
+        <Button>Join our Mailing List</Button>
+      </a>
     </Content>
     <Powered>
       Powered by{" "}
-      <a href="https://www.openlaw.io/" target="_">
-        <InlineImage src="https://www.openlaw.io/static/img/ol-logo-white.svg" />{" "}
-      </a>
+      <a style={{ color: "inherit" }} href="https://www.metacartel.org/" target="_">
+        <InlineImage src="https://images.squarespace-cdn.com/content/5c598e4ebfba3e5984563a0e/1565305053540-E97I3TTHCYHFU0DMW342/meta_chill+copy.png?content-type=image%2Fpng" />{" "}
+        MetaCartel
+      </a>{" "}
       on{" "}
       <InlineImage src="https://ethereum.org/static/a183661dd70e0e5c70689a0ec95ef0ba/42584/ethereum-icon-purple.png" />{" "}
       Ethereum
